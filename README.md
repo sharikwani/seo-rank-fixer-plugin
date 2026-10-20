@@ -48,7 +48,7 @@ The plugin holds no code that runs on your machine: it points Claude at `https:/
 
 ## Support
 
-mail2sharik@gmail.com
+support@seorankfixer.com
 
 ## License
 
