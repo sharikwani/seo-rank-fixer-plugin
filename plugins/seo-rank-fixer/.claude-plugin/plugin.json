@@ -8,7 +8,9 @@
     "url": "https://seorankfixer.com"
   },
   "homepage": "https://seorankfixer.com/connectors",
+  "privacyPolicyUrl": "https://seorankfixer.com/privacy",
   "repository": "https://github.com/sharikwani/seo-rank-fixer-plugin",
   "license": "MIT",
-  "keywords": ["seo", "google-search-console", "content", "marketing", "aeo", "geo"]
+  "keywords": ["seo", "google-search-console", "content", "marketing", "aeo", "geo"],
+  "icon": "./.claude-plugin/icon.png"
 }
