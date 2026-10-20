@@ -1,0 +1,103 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "seo-rank-fixer",
+  "version": "1.0.0",
+  "description": "Your Google Search Console data and the SEO fixes worth the most clicks, in ChatGPT.",
+  "author": {
+    "name": "SEO Rank Fixer",
+    "email": "mail2sharik@gmail.com",
+    "url": "https://seorankfixer.com"
+  },
+  "homepage": "https://seorankfixer.com/connectors",
+  "repository": "https://github.com/sharikwani/seo-rank-fixer-plugin",
+  "license": "MIT",
+  "keywords": ["seo", "google search console", "marketing", "content", "rankings"],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "SEO Rank Fixer",
+        "shortDescription": "Rank fixes by Google clicks",
+        "longDescription": "SEO Rank Fixer reads your Google Search Console data and ranks every SEO fix by the extra clicks it could win: pages stuck just off page one, titles that rank but don't get clicked, and pages competing with each other for the same search.\n\nAsk in plain words and get answers from your real data:\n- How is my site doing? Clicks, impressions, click-through rate and average position against the previous period, with a trend chart.\n- What should I fix first? The fixes worth the most clicks, each with why it matters and the steps to take.\n- Scan any public page for SEO, answer-engine and AI-crawler problems, with a score out of 100.\n- On paid plans: every opportunity, top queries and pages, countries and devices, and AI-written titles, meta descriptions and content briefs.\n\nSign in with your SEO Rank Fixer account. The free plan covers one site with no card. SEO Rank Fixer only reads your data: it never changes your website or your Search Console settings, and you can disconnect ChatGPT at any time under Settings, Connected AI apps.",
+        "developerName": "SEO Rank Fixer",
+        "category": "Business",
+        "capabilities": [
+          "Read Google Search Console performance",
+          "Rank SEO fixes by estimated clicks",
+          "Scan public pages for SEO issues",
+          "Write titles and meta descriptions (Pro)"
+        ],
+        "websiteURL": "https://seorankfixer.com",
+        "supportURL": "https://seorankfixer.com/connectors",
+        "privacyPolicyURL": "https://seorankfixer.com/privacy",
+        "termsOfServiceURL": "https://seorankfixer.com/terms",
+        "defaultPrompt": [
+          "What should I fix first to get more Google clicks?",
+          "How did my site do in Google over the last 28 days?",
+          "Scan seorankfixer.com for SEO problems"
+        ],
+        "brandColor": "#2630E3",
+        "brandColorDark": "#7D9BFF",
+        "composerIcon": "./assets/icon.png",
+        "logo": "./assets/logo.png",
+        "screenshots": ["./assets/top-fixes-light.png", "./assets/performance-light.png", "./assets/page-scan-light.png"]
+      },
+      "onboardingSkill": "./skills/seo-rank-fixer/SKILL.md",
+      "review": {
+        "test_cases": {
+          "positive": [
+            {
+              "description": "List the connected sites and plan",
+              "prompt": "Which sites do I have in SEO Rank Fixer?",
+              "tools_triggered": "list_sites",
+              "expected_behavior": "Lists the test account's sites with their sync status and the account's plan."
+            },
+            {
+              "description": "Site performance for the last 28 days",
+              "prompt": "How did seorankfixer.com do in Google over the last 28 days?",
+              "tools_triggered": "list_sites, site_performance",
+              "expected_behavior": "Shows clicks, impressions, CTR and average position with the change against the previous 28 days and a trend chart, using only the returned numbers."
+            },
+            {
+              "description": "Top fixes ranked by clicks",
+              "prompt": "What should I fix first on seorankfixer.com to get more clicks?",
+              "tools_triggered": "list_sites, top_fixes",
+              "expected_behavior": "Shows the open fixes ranked by estimated extra clicks a month, each with why it matters and the steps."
+            },
+            {
+              "description": "Scan a public page",
+              "prompt": "Scan https://seorankfixer.com/connectors for SEO problems.",
+              "tools_triggered": "scan_page",
+              "expected_behavior": "Shows a score out of 100 and each finding with its severity and what to change."
+            },
+            {
+              "description": "Top queries report",
+              "prompt": "Which search queries bring seorankfixer.com the most clicks?",
+              "tools_triggered": "list_sites, search_report",
+              "expected_behavior": "Lists the top queries with clicks, impressions, CTR and position against the previous period."
+            }
+          ],
+          "negative": [
+            {
+              "description": "Changing the website is not supported",
+              "prompt": "Change the title tag on my homepage for me."
+            },
+            {
+              "description": "Payments are not supported",
+              "prompt": "Upgrade my SEO Rank Fixer plan and charge my card."
+            },
+            {
+              "description": "Another person's Search Console data is not available",
+              "prompt": "Show me the Search Console clicks for nytimes.com."
+            }
+          ]
+        },
+        "demo_recording_url": "REPLACE_WITH_DEMO_VIDEO_URL",
+        "commerce": false,
+        "commerce_description": "SEO Rank Fixer does not sell products or take payments in ChatGPT. Plan upgrades happen on seorankfixer.com."
+      },
+      "publication": {
+        "release_notes": "First release: site performance, top fixes, page scans, opportunities, search reports and the AI Fixer, with in-chat cards."
+      }
+    }
+  }
+}
