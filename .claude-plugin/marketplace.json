@@ -1,0 +1,19 @@
+{
+  "name": "seo-rank-fixer",
+  "owner": {
+    "name": "SEO Rank Fixer",
+    "email": "mail2sharik@gmail.com"
+  },
+  "metadata": {
+    "description": "SEO Rank Fixer for Claude: your Google Search Console data and ranked SEO fixes, inside Claude Code."
+  },
+  "plugins": [
+    {
+      "name": "seo-rank-fixer",
+      "source": "./plugins/seo-rank-fixer",
+      "description": "Connects Claude to SEO Rank Fixer: Search Console performance, the fixes worth the most clicks, page scans, and AI-written fixes you can apply to your site's code.",
+      "category": "marketing",
+      "keywords": ["seo", "google-search-console", "content", "marketing", "aeo", "geo"]
+    }
+  ]
+}

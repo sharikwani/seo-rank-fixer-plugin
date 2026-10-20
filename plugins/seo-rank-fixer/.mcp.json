@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "seo-rank-fixer": {
+      "type": "http",
+      "url": "https://seorankfixer.com/api/mcp"
+    }
+  }
+}
