@@ -1,5 +1,6 @@
 {
   "name": "seo-rank-fixer",
+  "displayName": "SEO Rank Fixer",
   "version": "1.0.0",
   "description": "Connects Claude to SEO Rank Fixer: Search Console performance, the fixes worth the most clicks, page scans, and AI-written fixes you can apply to your site's code.",
   "author": {
@@ -8,7 +9,10 @@
     "url": "https://seorankfixer.com"
   },
   "homepage": "https://seorankfixer.com/connectors",
+  "documentationUrl": "https://seorankfixer.com/connectors",
+  "supportUrl": "mailto:mail2sharik@gmail.com",
   "privacyPolicyUrl": "https://seorankfixer.com/privacy",
+  "termsOfServiceUrl": "https://seorankfixer.com/terms",
   "repository": "https://github.com/sharikwani/seo-rank-fixer-plugin",
   "license": "MIT",
   "keywords": ["seo", "google-search-console", "content", "marketing", "aeo", "geo"],
