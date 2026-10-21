@@ -17,7 +17,7 @@ SEO Rank Fixer reads the user's Google Search Console data and ranks SEO fixes b
 
 | Tool | Use it for | Plan |
 | --- | --- | --- |
-| `list_sites` | Site ids, sync status, the plan | Free |
+| `list_sites` | Site ids, sync status; the plan, AI credits left and renewal date | Free |
 | `site_performance` | Clicks, impressions, CTR, position vs the previous period | Free (28 days); longer ranges Starter |
 | `top_fixes` | The 5 fixes worth the most clicks, with why and steps | Free |
 | `scan_page` | Score any public URL for SEO, answer-engine and AI-crawler issues | Free |

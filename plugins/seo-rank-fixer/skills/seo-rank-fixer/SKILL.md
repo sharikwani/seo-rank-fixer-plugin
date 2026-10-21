@@ -11,7 +11,7 @@ SEO Rank Fixer reads the user's Google Search Console data and ranks SEO fixes b
 
 | Tool | Use it for | Plan |
 | --- | --- | --- |
-| `list_sites` | Site ids, sync status, the plan. **Call first.** | Free |
+| `list_sites` | Site ids, sync status; the plan, AI credits left and renewal date. **Call first.** | Free |
 | `site_performance` | Clicks, impressions, CTR, position vs the previous period | Free (28 days); longer ranges Starter |
 | `top_fixes` | The 5 fixes worth the most clicks, with why and steps | Free |
 | `scan_page` | Score any public URL for SEO, answer-engine and AI-crawler issues | Free |
@@ -22,6 +22,8 @@ SEO Rank Fixer reads the user's Google Search Console data and ranks SEO fixes b
 ## Rules
 
 - Quote only numbers the tools return. Never estimate traffic yourself.
+- For "what plan am I on" or "how many credits do I have", answer from the `account` block of `list_sites`.
+- Brand and non-brand clicks cover only searches Google reports; pass on the `note` about the rest instead of treating the split as the total.
 - Say which date range the numbers cover.
 - When a tool says a feature needs another plan, pass that on in one line with the upgrade link it gives. Don't push upgrades otherwise.
 - Lead with the fix worth the most clicks, in plain words, then the steps.
