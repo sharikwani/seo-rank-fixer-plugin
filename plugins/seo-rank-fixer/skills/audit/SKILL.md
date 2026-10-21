@@ -12,6 +12,7 @@ Audit the site the user named in `$ARGUMENTS` (or ask which one if they have sev
 2. Call `site_performance` for the site (28 days, and 3 months too if the plan allows).
 3. Call `top_fixes` for the site. If the plan includes them, also call `opportunities` (limit 25) and `search_report` for `query` with `filter: "losing"`.
 4. Call `scan_page` on the site's homepage.
+5. Call `index_status` for the site. If pages are missing from Google, list the ones in the sitemap first.
 
 Then write the audit:
 
@@ -19,6 +20,7 @@ Then write the audit:
 - **Fix first:** the three fixes worth the most clicks, each with the estimated extra clicks a month, why, and the steps.
 - **Losing ground:** queries or pages that dropped, if you have them.
 - **Homepage scan:** the score and the high-severity findings.
+- **Not in Google:** how many pages Google has checked and indexed, and the pages missing, with the reason.
 - **Next step:** one sentence on what to do this week.
 
 Keep it under 400 words. Use only the numbers the tools return. If a step needs a higher plan, say so once at the end with the link the tool gave.

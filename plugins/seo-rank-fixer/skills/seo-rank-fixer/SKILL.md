@@ -15,6 +15,7 @@ SEO Rank Fixer reads the user's Google Search Console data and ranks SEO fixes b
 | `site_performance` | Clicks, impressions, CTR, position vs the previous period | Free (28 days); longer ranges Starter |
 | `top_fixes` | The 5 fixes worth the most clicks, with why and steps | Free |
 | `scan_page` | Score any public URL for SEO, answer-engine and AI-crawler issues | Free |
+| `index_status` | Which pages are in Google's index, and why the others are not (URL Inspection) | Free |
 | `opportunities` | Every open fix, filterable by site and type | Starter |
 | `search_report` | Top queries or pages; countries and devices | Starter; countries/devices Pro |
 | `write_fix` | AI-written titles, meta descriptions, content briefs, answer blocks | Pro (uses AI credits) |
