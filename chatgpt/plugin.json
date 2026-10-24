@@ -19,7 +19,7 @@
         "shortDescription": "Rank fixes by Google clicks",
         "longDescription": "SEO Rank Fixer reads your Google Search Console data and ranks every SEO fix by the extra clicks it could win: pages stuck just off page one, titles that rank but don't get clicked, and pages competing with each other for the same search.\n\nAsk in plain words and get answers from your real data:\n- How is my site doing? Clicks, impressions, click-through rate and average position against the previous period, with a trend chart.\n- What should I fix first? The fixes worth the most clicks, each with why it matters and the steps to take.\n- Scan any public page for SEO, answer-engine and AI-crawler problems, with a score out of 100.\n- On paid plans: every opportunity, top queries and pages, countries and devices, and AI-written titles, meta descriptions and content briefs.\n\nSign in with your SEO Rank Fixer account. The free plan covers one site with no card. SEO Rank Fixer only reads your data: it never changes your website or your Search Console settings, and you can disconnect ChatGPT at any time under Settings, Connected AI apps.",
         "developerName": "SEO Rank Fixer",
-        "category": "Business",
+        "category": "Productivity",
         "capabilities": [
           "Read Google Search Console performance",
           "Rank SEO fixes by estimated clicks",
