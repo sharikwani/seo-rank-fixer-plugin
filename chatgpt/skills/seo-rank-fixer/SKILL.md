@@ -19,7 +19,7 @@ SEO Rank Fixer reads the user's Google Search Console data and ranks SEO fixes b
 | --- | --- | --- |
 | `list_sites` | Site ids, sync status; the plan, AI credits left and renewal date | Free |
 | `site_performance` | Clicks, impressions, CTR, position vs the previous period | Free (28 days); longer ranges Starter |
-| `top_fixes` | The 5 fixes worth the most clicks, with why and steps | Free |
+| `top_fixes` | The fixes worth the most clicks, with why and steps | Free (top 3); paid plans top 5 |
 | `scan_page` | Score any public URL for SEO, answer-engine and AI-crawler issues | Free |
 | `index_status` | Which pages are in Google's index, and why the others are not (URL Inspection) | Free |
 | `site_audit` | Latest crawl of a site: health score out of 100, errors, warnings and notices, and the problems most worth fixing first with how to fix each. Read-only, never starts a crawl | Free (top 3 problems in full); every problem on paid plans |
