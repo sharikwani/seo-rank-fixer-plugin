@@ -1,5 +1,7 @@
 # SEO Rank Fixer for Claude
 
+[![M8ven Score](https://m8ven.ai/badge/mcp/sharikwani-seo-rank-fixer-plugin-3guueu?v=0dd7b74c3ec5f582d298115e657ba84e)](https://m8ven.ai/mcp/sharikwani-seo-rank-fixer-plugin-3guueu?s=readme)
+
 Your Google Search Console data and the SEO fixes worth the most clicks, inside Claude.
 
 [SEO Rank Fixer](https://seorankfixer.com) reads your Search Console data and ranks every fix (pages stuck on page two, titles that don't get clicked, pages competing with each other) by the extra clicks it could win. This plugin brings that into Claude Code and Claude, so you can ask about your rankings in plain words and apply fixes straight to your site's code.
