@@ -1,7 +1,7 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "seo-rank-fixer",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Your Google Search Console data and the SEO fixes worth the most clicks, in ChatGPT.",
   "author": {
     "name": "SEO Rank Fixer",
@@ -11,20 +11,26 @@
   "homepage": "https://seorankfixer.com/connectors",
   "repository": "https://github.com/sharikwani/seo-rank-fixer-plugin",
   "license": "MIT",
-  "keywords": ["seo", "google search console", "marketing", "content", "rankings"],
+  "keywords": [
+    "seo",
+    "google search console",
+    "marketing",
+    "content",
+    "rankings"
+  ],
   "extensions": {
     "com.openai": {
       "interface": {
         "displayName": "SEO Rank Fixer",
         "shortDescription": "Rank fixes by Google clicks",
-        "longDescription": "SEO Rank Fixer reads your Google Search Console data and ranks every SEO fix by the extra clicks it could win: pages stuck just off page one, titles that rank but don't get clicked, and pages competing with each other for the same search.\n\nAsk in plain words and get answers from your real data:\n- How is my site doing? Clicks, impressions, click-through rate and average position against the previous period, with a trend chart.\n- What should I fix first? The fixes worth the most clicks, each with why it matters and the steps to take.\n- Scan any public page for SEO, answer-engine and AI-crawler problems, with a score out of 100.\n- On paid plans: every opportunity, top queries and pages, countries and devices, and AI-written titles, meta descriptions and content briefs.\n\nSign in with your SEO Rank Fixer account. The free plan covers one site with no card. SEO Rank Fixer only reads your data: it never changes your website or your Search Console settings, and you can disconnect ChatGPT at any time under Settings, Connected AI apps.",
+        "longDescription": "SEO Rank Fixer reads your Google Search Console data and ranks every SEO fix by the extra clicks it could win: pages stuck just off page one, titles that rank but don't get clicked, and pages competing with each other for the same search.\n\nAsk in plain words and get answers from your real data:\n- How is my site doing? Clicks, impressions, click-through rate and average position against the previous period, with a trend chart.\n- What should I fix first? The fixes worth the most clicks, each with why it matters and the steps to take.\n- Scan any public page for SEO, answer-engine and AI-crawler problems, with a score out of 100.\n- Explore top queries and pages, countries and devices, and get suggested titles, meta descriptions and content briefs.\n\nSign in with your SEO Rank Fixer account. SEO Rank Fixer only reads your data: it never changes your website or your Search Console settings, and you can disconnect ChatGPT at any time under Settings, Connected AI apps.",
         "developerName": "SEO Rank Fixer",
         "category": "Productivity",
         "capabilities": [
           "Read Google Search Console performance",
           "Rank SEO fixes by estimated clicks",
           "Scan public pages for SEO issues",
-          "Write titles and meta descriptions (Pro)"
+          "Suggest titles and meta descriptions"
         ],
         "websiteURL": "https://seorankfixer.com",
         "supportURL": "https://seorankfixer.com/connectors",
@@ -39,7 +45,11 @@
         "brandColorDark": "#7D9BFF",
         "composerIcon": "./assets/icon.png",
         "logo": "./assets/logo.png",
-        "screenshots": ["./assets/top-fixes-light.png", "./assets/performance-light.png", "./assets/page-scan-light.png"]
+        "screenshots": [
+          "./assets/top-fixes-light.png",
+          "./assets/performance-light.png",
+          "./assets/page-scan-light.png"
+        ]
       },
       "onboardingSkill": "./skills/seo-rank-fixer/SKILL.md",
       "review": {
@@ -49,7 +59,7 @@
               "description": "List the connected sites and plan",
               "prompt": "Which sites do I have in SEO Rank Fixer?",
               "tools_triggered": "list_sites",
-              "expected_behavior": "Lists the test account's sites with their sync status and the account's plan."
+              "expected_behavior": "Lists the test account's sites with their sync status."
             },
             {
               "description": "Site performance for the last 28 days",
@@ -93,10 +103,10 @@
         },
         "demo_recording_url": "REPLACE_WITH_DEMO_VIDEO_URL",
         "commerce": false,
-        "commerce_description": "SEO Rank Fixer does not sell products or take payments in ChatGPT. Plan upgrades happen on seorankfixer.com."
+        "commerce_description": "SEO Rank Fixer does not sell products, subscriptions or credits, show plans or prices, or take payments in ChatGPT. When a feature is not included in the user's current plan, it says so in plain words."
       },
       "publication": {
-        "release_notes": "First release: site performance, top fixes, page scans, opportunities, search reports and the AI Fixer, with in-chat cards."
+        "release_notes": "Site performance, top fixes, page scans, index status, site audit, search reports and suggested fixes, with in-chat cards. Plan-limit replies in ChatGPT are now plain statements with no prices or upgrade links."
       }
     }
   }
