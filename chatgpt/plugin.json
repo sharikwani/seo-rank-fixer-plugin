@@ -63,15 +63,15 @@
             },
             {
               "description": "Site performance for the last 28 days",
-              "prompt": "How did seorankfixer.com do in Google over the last 28 days?",
+              "prompt": "How did unclaimedfundslookup.com do in Google over the last 28 days?",
               "tools_triggered": "list_sites, site_performance",
               "expected_behavior": "Shows clicks, impressions, CTR and average position with the change against the previous 28 days and a trend chart, using only the returned numbers."
             },
             {
               "description": "Top fixes ranked by clicks",
-              "prompt": "What should I fix first on seorankfixer.com to get more clicks?",
+              "prompt": "What should I fix first on unclaimedfundslookup.com to get more clicks?",
               "tools_triggered": "list_sites, top_fixes",
-              "expected_behavior": "Shows the open fixes ranked by estimated extra clicks a month, each with why it matters and the steps."
+              "expected_behavior": "Shows the open fixes ranked by estimated extra clicks a month, each with why it matters and the steps. The test site is new, so it may list few fixes."
             },
             {
               "description": "Scan a public page",
@@ -81,9 +81,9 @@
             },
             {
               "description": "Top queries report",
-              "prompt": "Which search queries bring seorankfixer.com the most clicks?",
+              "prompt": "Which search queries bring unclaimedfundslookup.com the most impressions?",
               "tools_triggered": "list_sites, search_report",
-              "expected_behavior": "Lists the top queries with clicks, impressions, CTR and position against the previous period."
+              "expected_behavior": "Lists the top queries with clicks, impressions, CTR and position against the previous period. The test site is new, so most queries have impressions but few clicks."
             }
           ],
           "negative": [
